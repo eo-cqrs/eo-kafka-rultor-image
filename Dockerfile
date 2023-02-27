@@ -1,4 +1,4 @@
-# Copyright (c) 2009-2022 Yegor Bugayenko
+# Copyright (c) 2022 Aliaksei Bialaiuski, EO-CQRS
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -26,8 +26,8 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# The software packages configured here (PHP, Node, Ruby, Java etc.) are for
-# the convenience of the users going to use this default container.
+# The software packages configured here (Git, Java, Maven, etc.) are for
+# the convenience of the users going to use this container.
 # If you are going to use your own container, you may remove them.
 # Rultor has no dependency on these packages.
 
