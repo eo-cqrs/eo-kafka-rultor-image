@@ -1,4 +1,4 @@
-# Copyright (c) 2022 Aliaksei Bialaiuski, EO-CQRS
+# Copyright (c) 2022 Aliaksei Bialiauski, EO-CQRS
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
