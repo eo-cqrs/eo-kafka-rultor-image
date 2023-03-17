@@ -124,6 +124,8 @@ RUN wget --quiet "https://dlcdn.apache.org/maven/maven-3/${MAVEN_VERSION}/binari
   mvn -version
 COPY settings.xml /root/.m2/settings.xml
 RUN bash -c '[[ "$(mvn --version)" =~ "${MAVEN_VERSION}" ]]'
+# JVM Params, don't touch if you don't know what you're doing
+RUN export MAVEN_OPTS="--add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED"
 
 # Clean up
 RUN rm -rf /tmp/*
