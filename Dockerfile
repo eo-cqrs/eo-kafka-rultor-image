@@ -83,6 +83,14 @@ RUN apt-get -y install libfontconfig1=2.13.1-2ubuntu3
 RUN apt-get -y install libfontconfig1-dev=2.13.1-2ubuntu3
 RUN apt-get -y install software-properties-common
 
+# Python
+RUN apt-get -y install python3-pip
+
+## Google Cloud CLI
+RUN curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-429.0.0-linux-x86_64.tar.gz \
+     && tar -xf google-cloud-cli-429.0.0-linux-x86_64.tar.gz \
+    && ./google-cloud-sdk/install.sh
+
 # CMake for C/C++ projects
 RUN apt-get -y install cmake=3.16.3-1ubuntu1.20.04.1
 
